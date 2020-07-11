@@ -30,7 +30,7 @@ steps:
       configuration: '$(buildConfiguration)'
   - task: PublishPipelineArtifact@1
     inputs:
-      targetPath: '$Pipeline.Workspace'
+      targetPath: '$(Pipeline.Workspace)'
       publishLocation: 'pipeline'
       
 
